@@ -1,26 +1,28 @@
 MultilingualNlp
 ===============
 目的1：利用对齐语料(以及单语语料)训练出多语表示。
+
 目的2：利用多语表示做迁移学习。
 
 ## 多语表示
 
 ### Loss include 
 * monolingual signal
-** word2vec
-** rnn language model
-** sentiment supervision
-** wikipedia label graph
+    * word2vec
+    * rnn language model
+    * sentiment supervision
+    * wikipedia label graph
 
 * translation siganl
-** dictionary alignments
-** sentence alignments
-** doc alignments
-** label aligned doc/sent
-** knowledge graph alignments, like wikidata、conceptNet
-** implicit regularization of translation
+    * dictionary alignments
+    * sentence alignments
+    * doc alignments
+    * label aligned doc/sent
+    * knowledge graph alignments, like wikidata、conceptNet
+    * implicit regularization of translation
 
 ### implementation
+```
 ├── dictionary_based    基于词对齐的多语表示学习，最终获得多语词向量
 │   ├── multi_tag           一个不优雅单但实现简单的思路: 通过替换词生成word2vec训练文本
 │   ├── offline-transform   提前训练好不同语言的词向量，训练一个变换 
@@ -35,7 +37,12 @@ MultilingualNlp
 │   ├── doc_rep_distance    基于encoder距离
 │   ├── lda2vec             lda的思路，基本上不需要多语处理。网上有一些多语lda的工作。
 │   ├── lda2vec-tf-master   同上。
+```
 
+### 评估
+* analogy_test:               利用手工标注的词相似度对模型评估
+* classification_test         http://git.baifendian.com/xia.hong/MultilingualClassification.git 
 
 ## 迁移学习
-
+http://git.baifendian.com/xia.hong/MultilingualClassification.git
+缺乏落地
