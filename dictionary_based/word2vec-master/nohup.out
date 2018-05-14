@@ -1,0 +1,8 @@
+word2vec_synonym.c: In function ‘parse_synonym_line’:
+word2vec_synonym.c:283:25: error: expected ‘)’ before ‘or’
+       if (line[i]=='\t' or line[i]=='\n'){
+                         ^
+word2vec_synonym.c: In function ‘TrainModelThread’:
+word2vec_synonym.c:483:28: error: ‘struct vocab_word’ has no member named ‘synonym_word’
+         word = vocab[cword].synonym_word[synonym_id];
+                            ^
