@@ -911,7 +911,7 @@ int main(int argc, char **argv) {
     printf("\t-synonym <file>\n");
     printf("\t\tUse synonym data from <file> to train the model\n");
     printf("\t-extend <int>\n");
-    printf("\t\textend synonym data to vocab\n");
+    printf("\t\textend synonym data to vocab, 0: 不拓展， 1: 不加考虑地拓展所有同义词， 2：只有改行任意一个词在train文件中才拓展其他同义词\n");
     printf("\t-output <file>\n");
     printf("\t\tUse <file> to save the resulting word vectors / word clusters\n");
     printf("\t-size <int>\n");
