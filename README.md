@@ -42,9 +42,6 @@ MultilingualNlp
 ├── hierarchy_multi_label_classification    利用多语文章、标签对齐训练。wikipedia对齐标签(需要wikidata)
 ├── parallel_text_based     基于句子对齐的多语表示学习。
 │   ├── bicvm               http://arxiv.org/abs/1404.4641.
-│   ├── doc_rep_distance    基于encoder距离
-│   ├── lda2vec             lda的思路，基本上不需要多语处理。网上有一些多语lda的工作。
-│   ├── lda2vec-tf-master   同上。
 ```
 
 ### 评估
